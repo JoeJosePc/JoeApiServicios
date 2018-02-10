@@ -1,0 +1,22 @@
+{
+  "version": "1.0.0-*",
+
+  "dependencies": {
+    "Cibertec.Business": "1.0.0-*",
+    "Cibertec.DADapper": "1.0.0-*",
+    "Cibertec.Models": "1.0.0-*",
+    "Cibertec.Repository": "1.0.0-*",
+    "Cibertec.UnitOfWork": "1.0.0-*",
+    "FluentAssertions": "4.19.4",
+    "Moq": "4.8.0",
+    "NETStandard.Library": "1.6.0",
+    "xunit": "2.3.1",
+    "xunit.runner.visualstudio": "2.3.1"
+  },
+
+  "frameworks": {
+    "netstandard1.6": {
+      "imports": "dnxcore50"
+    }
+  }
+}

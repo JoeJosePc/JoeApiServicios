@@ -1,0 +1,42 @@
+﻿@model Cibertec.Models.Producto
+<h2>Crear Nuevo Producto</h2>
+
+<div class="row">
+    <form asp-action="Edit">
+        @Html.HiddenFor(m=>m.Id)
+
+        <div class="form-group">
+            <label asp-for="Descripcion" class="control-label"></label>
+            <input asp-for="Descripcion" class="form-control" />
+            <span asp-validation-for="Descripcion" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="StockMinimo" class="control-label"></label>
+            <input asp-for="StockMinimo" class="form-control" />
+            <span asp-validation-for="StockMinimo" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="FechaRegistro" class="control-label"></label>
+            <input asp-for="FechaRegistro" class="form-control" />
+            <span asp-validation-for="FechaRegistro" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label">Tipo</label>
+            <select asp-for="Tipo">
+                <option value="0">Antiguo</option>
+                <option value="1">Nuevo</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <input type="submit" value="Guardar" class="btn btn-default" />
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

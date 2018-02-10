@@ -1,0 +1,16 @@
+{
+  "version": "1.0.0-*",
+
+  "dependencies": {
+    "Cibertec.Models": "1.0.0-*",
+    "Cibertec.UnitOfWork": "1.0.0-*",
+    "NETStandard.Library": "1.6.0",
+    "log4net": "2.0.8"
+  },
+
+  "frameworks": {
+    "netstandard1.6": {
+      "imports": "dnxcore50"
+    }
+  }
+}

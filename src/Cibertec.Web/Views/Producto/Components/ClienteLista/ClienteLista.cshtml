@@ -1,0 +1,25 @@
+﻿@model Cibertec.Models.Producto
+
+
+<div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+        <img src="https://lh3.googleusercontent.com/ilSkJZ4AV8m82lUbXQ9i33KANb9IK5lzBNH0iQXZVlrII5q2JWW7T9-AlDlToMeV8kIi=w300" alt="...">
+        <div class="caption">
+            <person descripcion="@Model.Descripcion" stock="@Model.StockMinimo"></person>
+            @*<h3>@Model.Descripcion</h3>
+            <p>Stock: @Model.StockMinimo</p>*@
+            <p>                
+                <a class="btn btn-primary" href='@Url.Action("Edit", "Producto", new { id= @Model.Id })'>
+                    Editar
+                </a>
+
+                <a class="btn btn-default"  href="/Producto/Delete/@Model.Id">Eliminar</a>
+
+                <a class="btn btn-primary" target="_blank"
+                   href="@Url.Action("GetImage","Producto",new { fileName = @Model.Archivo})">
+                    Archivo
+                </a>
+            </p>
+        </div>
+    </div>
+</div>
